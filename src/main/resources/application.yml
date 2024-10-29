@@ -1,0 +1,17 @@
+server:
+  port: 8500
+
+spring:
+  application:
+    name: ConfigurationService
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/madhusdhnn/attendance-tracking-system-config
+          repos:
+            profile-service:
+              pattern: profile-service/*
+              uri: https://github.com/madhusdhnn/attendance-tracking-system-config
+              search-paths:
+                - profile-service
