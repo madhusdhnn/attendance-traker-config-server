@@ -10,6 +10,11 @@ spring:
         git:
           uri: https://github.com/madhusdhnn/attendance-tracking-system-config
           repos:
+            identity-service:
+              pattern: identity-service/*
+              uri: https://github.com/madhusdhnn/attendance-tracking-system-config
+              search-paths:
+                - identity-service
             profile-service:
               pattern: profile-service/*
               uri: https://github.com/madhusdhnn/attendance-tracking-system-config
